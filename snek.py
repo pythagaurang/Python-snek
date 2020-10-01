@@ -119,6 +119,7 @@ class game():
 
     def gameplay(self):
         self.food()
+        print("press any key to start(q to exit)")
         while ((key:=self.readinput())!="q" and self.score!=self.WIN_SCORE):
             if key in self.keylist:
                 key=self.keylist.index(key)%4
